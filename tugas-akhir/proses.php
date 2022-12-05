@@ -1,4 +1,25 @@
-<?php
+<html>
+<head>
+    <title>Hasil</title>
+    <style>
+        div{
+
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 10px 10px 0px #D1D1D1;
+            width: 350px;
+            margin: 10px;
+            border: none;
+            font-size: 14pt;
+            border-radius: 5px;
+            padding: 10px; 
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <?php
 $nama = @$_POST['nama'];
 $rpl = @$_POST['rpl'];
 $akl = @$_POST['akl'];
@@ -33,5 +54,40 @@ if ($uploadFotoSukses) {
 if ($fileFoto->size > 1000 * 2000){
     die("File tidak boleh lebih dari 2MB");
 }
+if(isset($_POST['hitung'])){
+    $bil1    =$_POST['bil1'];
+    $bil2    =$_POST['bil2'];
+    $operasi=$_POST['operasi'];
+
+    switch ($operasi) {
+        case 'tambah':
+        $hasil = $bil1+$bil2;
+        break;
+        case 'kurang':
+        $hasil = $bil1-$bil2;
+        break;
+        case 'kali':
+        $hasil = $bil1*$bil2;
+        break;
+        case 'bagi':
+        $hasil = $bil1/$bil2;
+        break; 
+    }
+}
+if(isset($_POST['hitung'])){
+         echo "Hasil : $hasil";
+    }
+    else{
+    ?>
+        <input type="text" value="0" class="hasil"/>
+    <?php
+    }
 
 ?>
+<br>
+<button>
+    <a href="form.php">Kembali</a>
+</button>
+    </div>
+</body>
+</html>
