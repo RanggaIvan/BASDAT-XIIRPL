@@ -22,6 +22,9 @@
             <label>Penerbit</label>
             <input type="text" name="penerbit">
             <br>
+            <label>Harga</label>
+            <input type="number" name="harga">
+            <br>
             <button>Tambahkan</button>
             <br>
         </form>

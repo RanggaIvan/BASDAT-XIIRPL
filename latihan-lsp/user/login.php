@@ -191,6 +191,7 @@
 				</button>
 				<br>
 				<p>Back to <a href="../index.php">Home</a></p>
+				<p>Belum punya akun? Register <a href="daftar.php">Disini</a></p>
 			</form>
 		</div>
 		<div class="screen__background">

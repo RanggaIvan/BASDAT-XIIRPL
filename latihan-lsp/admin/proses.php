@@ -6,10 +6,11 @@
             $pengarang = $_POST['pengarang'];
             $thn = $_POST['thn_terbit'];
             $penerbit = $_POST['penerbit'];
+            $harga = $_POST['harga'];
             
             //Validasi data kosong
             if(empty($_POST['id_katalog'])||empty($_POST['judul_buku'])||empty($_POST['pengarang'])
-            ||empty($_POST['thn_terbit'])||empty($_POST['penerbit'])){
+            ||empty($_POST['thn_terbit'])||empty($_POST['penerbit'])||empty($_POST['harga'])){
                 ?>
                 <script lang="JavaScript">
                     alert('Data harus di lengkapi yahh');
@@ -18,7 +19,7 @@
             <?php
             }
 
-            $input = mysqli_query($koneksi, "insert into buku values('','$id','$judul','$pengarang','$thn','$penerbit')");
+            $input = mysqli_query($koneksi, "insert into buku values('','$id','$judul','$pengarang','$thn','$penerbit','$harga')");
 
             if($input){
                 ?>

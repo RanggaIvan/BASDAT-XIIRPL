@@ -24,7 +24,7 @@
                 ?>
                 <script>
                     alert('Data berhasil Ditambahkan!!');
-                    window.location = "index.php";
+                    window.location = "../user/login.php";
                 </script>
                 <?php
             }else{
