@@ -31,6 +31,7 @@
         <hr>
     <div class="table">
         <h1>Data Buku</h1>
+        <a href="sandbox.php">Sandbox</a>
         <h3>TOTAL BUKU TERSEDIA : <?php echo $jumlah_buku; ?></h3>
         <h1> Total Semua Harga Buku :
                 <?php
@@ -44,6 +45,7 @@
                 ?>
             </h1>
         <button><a href="add.php">Tambah Buku</a></button>
+        <button><a href="cetak_buku.php">Cetak</a></button>
     <table>
         <tr>
             <th>ID Buku</th>
@@ -89,6 +91,7 @@
         <h1>Data Anggota</h1>
         <h3>TOTAL ANGGOTA TERSEDIA : <?php echo $jumlah_anggota; ?></h3>
         <button><a href="add_anggota.php">Tambah Anggota</a></button>
+        <button><a href="cetak_anggota.php">Cetak</a></button>
         </center>
     <table>
         <tr>
